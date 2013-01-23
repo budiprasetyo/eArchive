@@ -1,0 +1,223 @@
+body{
+	/*
+	background: #C0DEED;
+	*/
+	background: #F5F5F5;
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+	height: auto;
+}
+
+h1,h2,h3,h4,h5{
+	margin-top: 0px;
+	font-family: verdana black, verdana;
+	text-align: center;
+}
+
+#login_form{
+	width: 370px;
+	background: #D3E8F2 url(../image/bg_login.jpg) repeat-x 0 0;
+	border: #FFFFFF 1px solid;
+	margin: 125px auto 0;
+	padding: 1em 1em 1em 1em;
+	/* Rounded corners */
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	/* Background gradient */
+	background: -moz-linear-gradient(19% 75% 90deg,#808080, #e0e0e0);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e0e0e0), to(#808080));
+	/* Shadow behind box */
+	-moz-box-shadow: 0px 50px 200px #707070;
+	-webkit-box-shadow: 0px 50px 200px #707070;
+	-o-box-shadow: 0px 50px 200px #707070;
+	box-shadow: 0px 50px 200px #707070;
+}
+
+#login_form input[type=submit], form a{
+	margin: 1em .5em auto;
+	width: 90px;
+}
+
+input[type=text], input[type=password], input[type=file]{
+	display: block;
+	margin: 0 0 0em -0.5em;
+	width: 370px;
+	border: 2px solid #999;
+	padding: 0.5em;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+input[type=text]:hover, input[type=password]:hover{
+	background: #C2D9FC;
+}
+
+input[type=submit], form a{
+	border: none;
+	margin-top: .5em;
+	margin-right: 1em;
+	margin-bottom: .5em;
+	padding: 6px;
+	width: 90px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #FFFFFF;
+	/*
+	background: #348075;
+	*/
+	background: #3967E5;
+	-moz-box-shadow: 0 1px 3px black;
+	-webkit-box-shadow: 0 1px 3px black;
+	-o-box-shadow: 0 1px 3px black;
+	box-shadow: 0 1px 3px black;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input[type=submit]:hover, form a:hover{
+	/*
+	background: #057368;
+	*/
+	background: #2020C9;
+	cursor: pointer;
+}
+
+fieldset{
+	width: 300px;
+	margin: auto;
+	margin-bottom: 2px;
+	display: block;
+}
+
+.error{
+	color: #393939;
+	font-size: 15px;
+}
+
+h2{
+	text-shadow: 0 1px 3px #404040;
+}
+
+.watermark{
+	color: #CCCCCC;
+	font-style: italic;
+}
+
+#mask {
+	display: none;
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: 0.2;
+	z-index: -1;
+}
+
+#form_apps{
+	position: absolute;
+	width: 950px;
+	margin: 0em 0em 10em 1em;
+	padding: 0em 1em 1em 1em;
+	border: solid 2px #707070;
+	background: #e0e0e0;
+	/* Rounded corners */
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	/* Background gradient */
+	background: -moz-linear-gradient(19% 75% 90deg,#b0b0b0, #f0f0f0);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e0e0e0), to(#b0b0b0));
+	/* Shadow behind box */
+	-moz-box-shadow: 0px 10px 70px #909090;
+	-webkit-box-shadow: 0px 10px 70px #909090;
+	-o-box-shadow: 0px 10px 70px #909090;
+	box-shadow: 0px 10px 70px #909090;
+	/* Position behind the menu */
+	z-index:-1;
+}
+
+#form_apps h1{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+	text-shadow: 0 1px 3px #909090;
+}
+
+#form_apps p{
+	font-size: 11px;
+	color: #666666;
+	text-align: right;
+	margin-bottom: 20px;
+	border-bottom: solid 1px #d0d0d0;
+	padding-bottom: 10px;
+}
+
+#form_apps p#flip{
+	font-size: 12px;
+	text-align: center;
+}
+
+#form_apps p#flip:hover{
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	text-shadow: 0 1px 3px #909090;
+}
+#form_apps label{
+	float: left;
+	margin: 0 1em auto;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	width: 270px;
+}
+
+#form_apps .small{
+	float: left;
+	color: #666666;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: left;
+	width: 230px;
+}
+
+#form_apps input[type=submit], form a{
+	border: none;
+	margin-right: 6em;
+	padding: 6px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #FFFFFF;
+	/*
+	background: #348075;
+	*/
+	background: #3967E5;
+	-moz-box-shadow: 0 1px 3px black;
+	-webkit-box-shadow: 0 1px 3px black;
+	-o-box-shadow: 0 1px 3px black;
+	box-shadow:  0 1px 3px black;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#form_apps input[type=submit]:hover, form a:hover{
+	/*
+	background: #057368;
+	*/
+	background: #2020C9;
+	cursor: pointer;
+}
+#footer{
+	margin: 5em 0 5em 0;
+}
